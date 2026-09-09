@@ -4,6 +4,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+header {
+    margin: 0;
+}
+
 #course-title {
     display: block;
     text-align: center;
@@ -23,6 +27,11 @@ a.navigation {
     text-decoration: none;
     color: beige;
     font-size: 1rem;
+}
+
+a.navigation:hover {
+    color: #f0f0f0;
+    font-size: 1.5rem;
 }
 
 h1 {
