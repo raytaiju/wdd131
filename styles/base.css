@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    background-color: beige;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #222;
+}
+
+a.navigation {
+    text-decoration: none;
+    color: beige;
+    font-size: 1rem;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+main {
+    margin: 2rem 4rem;
+
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.card {
+    border:2px solid #222;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: beige;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #222;
+    padding: 1rem;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    color: beige;
+}
