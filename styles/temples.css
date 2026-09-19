@@ -35,7 +35,6 @@ header p{
 #menu-button::before{
     display: block;
     content: "☰";
-    font-size: 2rem;
     color: #222;
     cursor: pointer;
     font-size: 3rem;
