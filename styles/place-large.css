@@ -1,0 +1,113 @@
+@media (min-width: 1000px) {
+
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 300;
+    background-color: #669c6f;
+    border-bottom: 20px solid #1b5f45;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.hero {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    z-index: 1;
+}
+
+#data {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    z-index: 2;
+    justify-self: start;
+    margin-left: 3rem;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for left/right cards */
+    grid-template-rows: 1fr;
+    align-items: center; /* Vertically center cards over the image */
+    position: relative;
+}
+
+.hero, .hero picture {
+    width: 100%;
+    display: block;
+}
+
+.hero img {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero {
+    border: none;
+}
+
+section {
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.25rem;
+}
+
+#weather-icon {
+    background-color: #1b5f45;
+    width: 30px;
+    margin: 0;
+}
+
+.headcon {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+
+h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 43px;
+    font-weight: 400;
+    background-color: #669c6f;
+    margin: 1.25rem -1.25rem 1.25rem -1.25rem;
+    padding: 0.75rem 1rem;
+}
+
+p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.label {
+    text-align: right;
+    font-weight: 500;
+}
+
+.value {
+    font-weight: 300;
+}
+
+footer {
+    background-color: #669c6f;
+    padding: 2rem;
+    border-top: #1b5f45 solid 10px;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+}
+}
