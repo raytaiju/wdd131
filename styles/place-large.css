@@ -1,13 +1,18 @@
 @media (min-width: 1000px) {
 
+:root {
+    --primary-color: #669c6f;
+    --secondary-color: #1b5f45;
+    --card-color: rgba(255, 255, 255, 0.78);
+}
 
 h1 {
     display: block;
     text-align: center;
     font-size: 72px;
     font-weight: 300;
-    background-color: #669c6f;
-    border-bottom: 20px solid #1b5f45;
+    background-color: var(--primary-color);
+    border-bottom: 20px solid var(--secondary-color);
 }
 
 main {
@@ -66,7 +71,7 @@ main {
 
 section {
     margin: 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--card-color);
     padding: 1.25rem;
 }
 
@@ -90,7 +95,7 @@ h2 {
     text-align: left;
     font-size: 43px;
     font-weight: 400;
-    background-color: #669c6f;
+    background-color: var(--primary-color);
     margin: 1.25rem -1.25rem 1.25rem -1.25rem;
     padding: 0.75rem 1rem;
 }
@@ -111,7 +116,7 @@ p {
 }
 
 footer {
-    background-color: #669c6f;
+    background-color: var(--primary-color);
     padding: 2rem;
     border-top:none;
 }
