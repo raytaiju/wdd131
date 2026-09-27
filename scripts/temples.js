@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("currentyear").textContent = currentYear; 
     const lastModified = document.lastModified;
     document.getElementById("lastmodified").textContent = "Last Modified: " + lastModified;
-});
+})
 
 const nav = document.querySelector('#nav-container')
 const menuBtn = document.querySelector('#menu-button')
