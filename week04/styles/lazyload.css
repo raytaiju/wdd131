@@ -1,0 +1,23 @@
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    animation: fadeIn 0.5s ease-in;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
