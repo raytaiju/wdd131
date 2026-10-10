@@ -69,7 +69,7 @@ footer p {
 }
 
 
-@mediaquery (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         padding: 20px;
     }
