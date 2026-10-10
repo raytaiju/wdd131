@@ -37,7 +37,7 @@ select, input[type="text"], input[type="date"], textarea {
     margin-bottom: 60px;
 }
 
-span {
+.star {
     display: block;
 }
 
@@ -66,4 +66,17 @@ footer p {
     display: block;
     text-align: center;
     color: var(--primary-color);
+}
+
+
+@mediaquery (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    select, input[type="text"], input[type="date"], textarea, input[type="submit"] {
+        font-size: 18px;
+    }
 }

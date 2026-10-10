@@ -6,11 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="description" content="Form page for week 05 assignment.">
+    <meta name="description" content="Form page required for week 05 assignment, which allows users to submit a product review.">
     <meta name="author" content="Zhou Ray">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
-    <title>Form</title>
+    <title>Form assignment week 05</title>
 </head>
 <body>
     <header>
@@ -23,26 +23,26 @@
                 <option value="" disabled selected>Select a product</option>
             </select><br>
 
-            <label for="rating">Overall Rating</label><br>
+            <legend>Overall Rating</legend><br>
             <div class="ratingContainer">
-                <span>☆</span>
+                <label for="rating1" class="star">☆</label>
                 <input type="radio" name="rating" id="rating1" value="1" required>
             </div>
             <div class="ratingContainer">
-                <span>☆☆</span>
-                <input type="radio" name="rating" id="rating2" value="2">
+                <label for="rating2" class="star">☆☆</label>
+                <input type="radio" name="rating" id="rating2" value="2" required>
             </div>
             <div class="ratingContainer">
-                <span>☆☆☆</span>
-                <input type="radio" name="rating" id="rating3" value="3">
+                <label for="rating3" class="star">☆☆☆</label>
+                <input type="radio" name="rating" id="rating3" value="3" required>
             </div>
             <div class="ratingContainer">
-                <span>☆☆☆☆</span>
-                <input type="radio" name="rating" id="rating4" value="4">
+                <label for="rating4" class="star">☆☆☆☆</label>
+                <input type="radio" name="rating" id="rating4" value="4" required>
             </div>
             <div class="ratingContainer">
-                <span>☆☆☆☆☆</span>
-                <input type="radio" name="rating" id="rating5" value="5">
+                <label for="rating5" class="star">☆☆☆☆☆</label>
+                <input type="radio" name="rating" id="rating5" value="5" required>
             </div><br>
 
             <label for="date">Date of Installation:</label><br>
