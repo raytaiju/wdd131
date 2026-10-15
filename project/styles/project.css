@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #49424a;
+    --secondary-color: #fef2f2;
+    --accent-color: #f29dc3;
+    --primary-font: 'montserrat', sans-serif;
+    --title-size: 60px;
+    --subtitle-size: 37px;
+    --paragraph-size: 22px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+body{
+    background-color: var(--primary-color);
+    max-width: 100vw;
+}
+
+#menuBtn {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: var(--title-size);
+    opacity: 50%;
+    padding: 20px;
+    z-index: 998;
+}
+
+#menuBtn:hover{
+    scale: 120%;
+    opacity: 100%;
+}
+
+#close:hover{
+    color: var(--accent-color);
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    background-color: rgba(254, 242, 242, 0.5) ;
+    backdrop-filter: blur(20px);
+}
+
+.show {
+    display: flex;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%; 
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: var(--paragraph-size);
+    color: var(--primary-color);
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+h1{
+    font-weight: 500;
+}
+
+h1.home {
+    display: block;
+    text-align: center;
+    grid-column: 3/8;
+    grid-row: 2/5;
+    position: relative;
+    z-index: 999;
+}
+
+.big-text {
+    font-size: var(--title-size);
+}
+
+.medium-text {
+    font-size: var(--subtitle-size);
+}
+
+p {
+    font-size: var(--paragraph-size);
+    display: block;
+    text-align: center;
+    margin: 40px;
+}
+
+.pcimage {
+    display: none;
+}
+
+.page-container {
+    aspect-ratio: 9/16;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.page-bg-mobile, .page-bg-pc {
+    width: 100vw;
+}
+.page-bg-pc {
+    display: none;
+}
+
+.full-grid-child {
+    grid-row: 1/10;
+    grid-column: 1/10;
+}
+
+.full-grid {
+    display: grid;
+    grid-template-columns: 1fr *10;
+    grid-template-rows: 1fr * 10;
+    
+}
+
+.div1 {
+    background-color: var(--secondary-color);
+}
+
+@media (min-width: 900px) {
+    .page-bg-mobile {
+        display: none;
+    }
+
+    .page-bg-pc {
+        display: block;
+    }
+}
