@@ -262,8 +262,8 @@ label {
 button {
     display: block;
     margin: 20px auto;
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
+    width: 60%;
     font-size: var(--subtitle-size);
     background-color: var(--accent-color);
 }
