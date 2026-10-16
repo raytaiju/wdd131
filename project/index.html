@@ -29,7 +29,7 @@
     <main>
         <div class="page-container">
             <div class="full-grid"> 
-                <h1 class="big-text home">First step into<br>motion design</h1>
+                <h1 class="home">First step into<br>motion design</h1>
                 <img src="images/pc-home-page-bg.jpg" alt="Home page background image" class="page-bg-pc full-grid-child" >
                 <img src="images/mobile-home-page-bg.jpg" alt="home page background image" class="page-bg-mobile full-grid-child" >
             </div>
@@ -37,7 +37,7 @@
 
         <div class="page-container">
             <div class="two-grid">
-                <p><span class="medium-text">Motion design</span> is graphic design set in motion—but that definition barely scratches the surface. At its core, motion design is the art of translating static visual communication into a dynamic narrative across time and space. It borrows the foundational principles of traditional graphic design—typography, color theory, hierarchy, and grid systems—and infuses them with the cinematic language of movement, rhythm, and temporal pacing.</p>
+                <p class="txt-two"><span class="medium-text">Motion design</span> is graphic design set in motion—but that definition barely scratches the surface. At its core, motion design is the art of translating static visual communication into a dynamic narrative across time and space. It borrows the foundational principles of traditional graphic design—typography, color theory, hierarchy, and grid systems—and infuses them with the cinematic language of movement, rhythm, and temporal pacing.</p>
                 <img src="images/image grid.jpg" alt="Motion design image" class="pcimage">
             </div>
         </div>
@@ -78,15 +78,15 @@
 
         <div class="page-container div1">
             <div class="full-grid">
-                <p><span class="medium-text">look</span> closely at almost any screen you interact with throughout the day, and you will find motion design at work. It is in the subtle spring of a mobile app’s swipe gesture, the dynamic title sequence of a streaming series, the kinetic typography flashing across a brand's product reveal, and the sleek animated lower-thirds on a broadcast news stream. Beyond pure aesthetics, motion design has become the default visual language of the digital age—quietly directing your attention, explaining complex software features in seconds, and turning static environments into active, responsive conversations between the user and the screen.</p>
-            </div>
-            <lottie-player 
+                <p id="looktext"><span class="medium-text">look</span> closely at almost any screen you interact with throughout the day, and you will find motion design at work. It is in the subtle spring of a mobile app’s swipe gesture, the dynamic title sequence of a streaming series, the kinetic typography flashing across a brand's product reveal, and the sleek animated lower-thirds on a broadcast news stream. Beyond pure aesthetics, motion design has become the default visual language of the digital age—quietly directing your attention, explaining complex software features in seconds, and turning static environments into active, responsive conversations between the user and the screen.</p>
+                <lottie-player 
                 src="lottie/carousel-pc.json" 
-                background="transparent" 
-                speed="1" 
-                loop 
-                autoplay class="page-bg-pc">
-            </lottie-player>
+                    background="transparent" 
+                    speed="1" 
+                    loop 
+                    autoplay class="page-bg-pc full-grid-child">
+                </lottie-player>
+            </div>
         </div>
 
         <div class="page-container div1">
@@ -96,10 +96,8 @@
         </div>
 
         <div class="page-container div1">
-            <div class="basic-container">
-                <p class="big-text">Sign up for our news letter?</p>
-                <a href="newsletter.html">Sign Up</a>
-            </div>
+            <p class="big-text">Sign up for our news letter?</p>
+            <a href="newsletter.html" id="newsletterbutton">Sign Up</a>
         </div>
             
     </main>

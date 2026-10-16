@@ -4,103 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
     <meta name="description" content="This page provides information and tips for beginner animators/designers">
     <meta name="author" content="Zhou Ray">
     <title>Things you will need to know before animating</title>
 </head>
 <body>
-    <head>
-
-    </head>
+    <header>
+        <nav>
+            <p id="menuBtn">☰</p>
+            <ul class="sidebar">
+                <li><a href="#" id="close">✖</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="newsletter.html">News letter</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <div class="page-container">
             <div class="full-grid">
-                <h1 class="big-text">Here are some things to know before animating</h1>
+                <h1 class="big-text tip process txt-two">Here are some things to know before animating</h1>
                 <lottie-player
                     src="lottie/principles-pc.json"
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay class="page-bg-pc">
+                    autoplay class="page-bg-pc full-grid-child">
+                </lottie-player>
+                <lottie-player
+                    src="lottie/principles-mobile.json"
+                    background="transparent" 
+                    speed="1" 
+                    loop 
+                    autoplay class="page-bg-mobile full-grid-child">
                 </lottie-player>
             </div>
         </div>
 
         <div class="page-container">
             <div class="basic-container">
-                <p>These are some universal properties we can animate regardless of software</p>
+                <p class="tip txt-two">These are some universal properties we can animate regardless of software</p>
             </div>
         </div>
 
         <div class="page-container">
-            <div class="2-grid">
-                <p><span class="medium-text">Position</span>properties in motion design govern the exact spatial coordinates of an element across X, Y, and sometimes Z axes over time. They are the foundational anchor points that transform static vectors or text from a dead asset into a moving narrative, dictating where an object lives on the canvas from one keyframe to the next. Whether you are driving a smooth cubic Bézier ease in After Effects, wiring a procedural position offset in Cavalry, or tracking spatial movement down to individual pixels on a mobile timeline, manipulating position is how you turn raw screen space into choreography.</p>
+            <div class="two-grid">
+                <p class="tip txt-two"><span class="medium-text">Position</span>properties in motion design govern the exact spatial coordinates of an element across X, Y, and sometimes Z axes over time. They are the foundational anchor points that transform static vectors or text from a dead asset into a moving narrative, dictating where an object lives on the canvas from one keyframe to the next. Whether you are driving a smooth cubic Bézier ease in After Effects, wiring a procedural position offset in Cavalry, or tracking spatial movement down to individual pixels on a mobile timeline, manipulating position is how you turn raw screen space into choreography.</p>
                 <lottie-player
                     src="lottie/position.json"
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay>
+                    autoplay class="lottie">
                 </lottie-player>
             </div>
         </div>
 
         <div class="page-container">
-            <div class="2-grid">
-                <p><span class="medium-text">Scale</span>determines the relative size of an asset on the canvas, acting as a powerful tool for establishing visual hierarchy, creating depth, and injecting weight into a scene. Animating a scale value from zero to one hundred percent pulls an element straight toward the viewer, turning a static graphic into an aggressive pop or a smooth, organic reveal. Whether you are overshooting a keyframe curve to give a UI button a bouncy, tactile feel in After Effects or scaling up a 3D model in Blender to alter its perceived distance from the camera, manipulating scale is how you control what demands the viewer's attention first.</p>
+            <div class="two-grid">
+                <p class="tip txt-two"><span class="medium-text">Scale</span>determines the relative size of an asset on the canvas, acting as a powerful tool for establishing visual hierarchy, creating depth, and injecting weight into a scene. Animating a scale value from zero to one hundred percent pulls an element straight toward the viewer, turning a static graphic into an aggressive pop or a smooth, organic reveal. Whether you are overshooting a keyframe curve to give a UI button a bouncy, tactile feel in After Effects or scaling up a 3D model in Blender to alter its perceived distance from the camera, manipulating scale is how you control what demands the viewer's attention first.</p>
                 <lottie-player
                     src="lottie/scale.json"
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay>
+                    autoplay class="lottie">
                 </lottie-player>
             </div>
         </div>
 
         <div class="page-container">
-            <div class="2-grid">
-                <p><span class="medium-text">Rotation</span>breathes life into flat design by spinning elements along a 2D axis or tumbling them through 3D space. It is the mechanic behind a spinning brand logo, a swinging pendulum easing into its resting arc, or the subtle tilt of kinetic typography catching the eye. Whether you are ramping up angular velocity to create frantic kinetic energy in After Effects or revolving a complex 3D asset around a precise pivot point in Blender, rotation turns rigid, static layouts into dynamic motion that feels physically grounded.</p>
+            <div class="two-grid">
+                <p class="tip txt-two"><span class="medium-text">Rotation</span>breathes life into flat design by spinning elements along a 2D axis or tumbling them through 3D space. It is the mechanic behind a spinning brand logo, a swinging pendulum easing into its resting arc, or the subtle tilt of kinetic typography catching the eye. Whether you are ramping up angular velocity to create frantic kinetic energy in After Effects or revolving a complex 3D asset around a precise pivot point in Blender, rotation turns rigid, static layouts into dynamic motion that feels physically grounded.</p>
                 <lottie-player
                     src="lottie/rotation.json"
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay>
+                    autoplay class="lottie">
                 </lottie-player>
             </div>
         </div>
 
         <div class="page-container">
             <div class="basic-container">
-                <p>Of course, these are not all, in fact there are A LOT more, these are just the basics.<br><br>That aside, another important thing is...</p>
+                <p class="tip txt-two">Of course, these are not all, in fact there are A LOT more, these are just the basics.<br><br>That aside, another important thing is...</p>
             </div>
         </div>
 
         <div class="page-container">
-            <div class="2-grid">
-                <p class="big-text">Easing</p>
+            <div class="two-grid">
+                <p class="big-text tip txt-two" id="easing">Easing</p>
                 <lottie-player
                     src="lottie/easing-logo.json"
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay>
+                    autoplay class="lottie">
                 </lottie-player>
             </div>
         </div>
 
         <div class="page-container">
             <div class="basic-container">
-                <p>Easing is the invisible pulse that dictates how motion accelerates and decelerates, separating mechanical, robotic movement from organic, believable life. Instead of an object instantly snapping from one keyframe to the next at a robotic, linear speed, easing introduces acceleration curves—shaping how an object builds momentum as it starts moving and gently cushions itself to a halt as it arrives. Whether you are tweaking velocity handles on a custom speed graph in After Effects to give a title card a buttery-smooth deceleration, or wiring exponential easing functions into a web animation, mastering easing is what transforms cold math into physical weight, rhythm, and grace.</p>
+                <p class="tip txt-two">Easing is the invisible pulse that dictates how motion accelerates and decelerates, separating mechanical, robotic movement from organic, believable life. Instead of an object instantly snapping from one keyframe to the next at a robotic, linear speed, easing introduces acceleration curves—shaping how an object builds momentum as it starts moving and gently cushions itself to a halt as it arrives. Whether you are tweaking velocity handles on a custom speed graph in After Effects to give a title card a buttery-smooth deceleration, or wiring exponential easing functions into a web animation, mastering easing is what transforms cold math into physical weight, rhythm, and grace.</p>
             </div>
         </div>
 
         <div class="page-container">
-            <div class="2-grid">
-                <div>
-                    <p class="big-text">Build yours</p>
+            <div class="two-grid">
+                <div id="buid-container">
+                    <p class="big-text tip txt-two">Build yours</p>
                     <form action="">
                         <select name="easeChoice" id="easeChoice" required>
                             <option value="noEase" selected>No ease</option>
@@ -108,12 +128,27 @@
                         </select>
                     </form>
                 </div>
-                <div id="lottieContainer"></div>
+                <div id="lottieContainer">
+                    <lottie-player id="uneased" class="build-sample"
+                        src="lottie/uneased.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                    <lottie-player id="eased" class="build-sample"
+                        src="lottie/eased.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer>
+    <footer class="tip">
         <p>&copy; <span id="currentyear"></span> Zhou Ray Yu. Nigeria.</p>
         <p id="lastmodified"></p>
     </footer>

@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
     <meta name="description" content="This page holds information concerning the softwares used in the production of motion design and the process of said production.">
     <meta name="author" content="Zhou Ray">
     <title>Process and production of motion design</title>
 </head>
 <body>
     <header>
-
+        <nav>
+            <p id="menuBtn">☰</p>
+            <ul class="sidebar">
+                <li><a href="#" id="close">✖</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="newsletter.html">News letter</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div>
 
-            <div class="full-grid">
-                <h1 class="big-text">So how is motion created?</h1>
+            <div class="full-grid div1">
+                <h1 class="big-text process">So how is motion created?</h1>
                 <lottie-player 
                     src="lottie/process-pc.json" 
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay class="page-bg-pc">
+                    autoplay class="page-bg-pc full-grid-child">
                 </lottie-player>
             
                 <lottie-player 
@@ -31,60 +44,60 @@
                     background="transparent" 
                     speed="1" 
                     loop 
-                    autoplay class="page-bg-mobile">
+                    autoplay class="page-bg-mobile full-grid-child">
                 </lottie-player>
             </div>
         </div>
 
-        <div class="page-container">
+        <div class="page-container div1">
             <div class="basic-container">
                 <p><span>Motion Design</span> is a broad field and animations can be made in many ways, frame-by-frame, keyframe animation, procedural... it's A LOT, but methods could sometimes be determined by the software used.</p>
             </div>
         </div>
 
-        <div class="page-container">
-            <div class="2-grid">
+        <div class="page-container div1">
+            <div class="two-grid">
                 <p class="big-text">After Effects</p>
                 <p>Adobe After Effects stands as the undisputed heavy machinery of the motion design industry, acting as a digital workshop where static vector graphics, 3D elements, and raw footage collide into complex animations. It trades in infinite control, allowing editors and animators to sculpt movement down to individual keyframes, manipulate intricate speed graphs, and composite multi-layer visual effects with surgical precision. From shaping kinetic typography and driving fluid UI explainers to rigging character joints and simulating 3D depth lighting, After Effects remains the heavy-lifting engine behind everything from commercial title sequences to indie explainer videos.</p>
             </div>
         </div>
 
-        <div class="page-container">
-            <div class="2-grid">
+        <div class="page-container div1">
+            <div class="two-grid">
                 <p class="big-text">Davinci resolve</p> 
                 <p>DaVinci Resolve takes the opposite approach of After Effects, functioning less like a digital canvas for building complex animations from scratch and more like an entire post-production ecosystem under one roof. It is famous for its industry-standard color grading suite, but its real power lies in refusing to make you bounce between separate apps for editing, audio mixing, and visual effects.
                 Its secret weapon is the Fusion page—a node-based compositing workspace where you build visual effects, particle simulations, and motion graphics by chaining visual nodes together rather than stacking a timeline full of layers. While After Effects is unmatched for freeform keyframing and complex motion graphics, Resolve handles the heavy lifting of raw timeline playback, multi-camera editing, and final color finishing with a speed and integration that keeps a commercial workflow moving without breaking momentum.</p>
             </div>
         </div>
 
-        <div class="page-container">
-            <div class="2-grid">
+        <div class="page-container div1">
+            <div class="two-grid">
                 <p class="big-text">Cavalry</p>
                 <p>Cavalry cuts through the messy layer-stacking of traditional animation apps by introducing a modern, procedural workflow built entirely around data, behaviors, and relationships. Instead of manually keyframing every single element, you wire up parametric shapes, effectors, and data inputs—turning animation into a dynamic system where changing a single variable updates an entire motion graphic automatically. It is purpose-built for fast-moving designers who need to spin out endless variations, generate complex data-driven visualizations, or create looping micro-animations with a level of mathematical precision that would take hours of tedious keyframing anywhere else.</p>
             </div>
         </div>
 
-        <div class="page-container">
-            <div class="2-grid">
+        <div class="page-container div1">
+            <div class="two-grid">
                 <p class="big-text">Blender</p>
                 <p>Blender refuses to stay in a single lane, evolving from a quirky open-source 3D underdog into an absolute powerhouse that handles modeling, texturing, rigging, simulation, and rendering under one roof. While other apps force you to juggle separate software for sculpting a character, painting its textures, and simulating complex smoke or cloth physics, Blender keeps the entire pipeline inside a single viewport. Its Eevee real-time render engine allows for lightning-fast look-development, while Cycles handles physically accurate raytracing for photorealistic outputs—giving motion designers and 3D generalists the firepower to build complex virtual worlds and drop them seamlessly into their composite pipelines without ever hitting a software paywall.</p>
             </div>
         </div>
 
-        <div class="page-container">
-            <div class="2-grid">
+        <div class="page-container div1">
+            <div class="two-grid">
                 <p class="big-text">Alight Motion</p>
                 <p>Alight Motion proves that professional-grade motion design doesn't require a tethered desktop workstation, packing vector editing, keyframing, and multi-track timelines directly into the mobile ecosystem. It brings the core mechanics of traditional animation suites—such as easing curves, blend modes, and visual effects—straight to touchscreens, letting creators build complex motion graphics and kinetic typography entirely on a phone or tablet. While it lacks the sheer heavy-duty compositing power of desktop giants like After Effects, its portability and surprising depth make it a surprisingly agile playground for quick mobile edits and on-the-go visual ideation.</p>
             </div>
         </div>
 
-        <div class="page-container">
+        <div class="page-container div1">
             <div class="basic-container">
                 <p class="medium-text">These are not all the softwares but its a great place to start, choose one and get animating(if you can)!</p>
             </div>
         </div>
 
-        <div class="page-container">
+        <div class="page-container div1">
             <div class="basic-container">
                 <p class="big-text">The process often include:</p>
                 <p>-Ideation<br>-Storyboard/Scripting<br>Animation</p>

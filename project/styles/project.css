@@ -3,6 +3,7 @@
     --secondary-color: #fef2f2;
     --accent-color: #f29dc3;
     --primary-font: 'montserrat', sans-serif;
+    --head-size:100px;
     --title-size: 60px;
     --subtitle-size: 37px;
     --paragraph-size: 22px;
@@ -26,9 +27,10 @@ body{
     top: 0;
     right: 0;
     font-size: var(--title-size);
-    opacity: 50%;
+    opacity: 70%;
     padding: 20px;
     z-index: 998;
+    color: rgb(150, 150, 150);
 }
 
 #menuBtn:hover{
@@ -78,16 +80,27 @@ nav a:hover{
 }
 
 h1{
-    font-weight: 500;
+    font-weight: 700;
+    font-size: var(--head-size);
+    color: var(--primary-color);
+}
+
+h1.process{
+    display: block;
+    text-align: center;
+    grid-column: 3/8;
+    grid-row: 3/6;
+    position: relative;
+    z-index: 998;
 }
 
 h1.home {
     display: block;
     text-align: center;
     grid-column: 3/8;
-    grid-row: 2/5;
+    grid-row: 1/4;
     position: relative;
-    z-index: 999;
+    z-index: 998;
 }
 
 .big-text {
@@ -103,6 +116,7 @@ p {
     display: block;
     text-align: center;
     margin: 40px;
+    color: var(--primary-color);
 }
 
 .pcimage {
@@ -114,6 +128,8 @@ p {
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .page-bg-mobile, .page-bg-pc {
@@ -130,21 +146,166 @@ p {
 
 .full-grid {
     display: grid;
-    grid-template-columns: 1fr *10;
-    grid-template-rows: 1fr * 10;
-    
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100vw;
+}
+
+.lottie{
+    width: 100%;
+}
+
+.build-sample {
+    display: none;
+}
+
+.appear{
+    display: block;
 }
 
 .div1 {
     background-color: var(--secondary-color);
 }
 
+.txt-two{
+    color: var(--secondary-color);
+}
+
+.special-link {
+    text-decoration: none;
+    font-size: var(--title-size);
+    color: var(--primary-color);
+}
+
+.special-link:hover{
+    scale: 150%;
+    transform: translateX(63px);
+    color: var(--accent-color);
+}
+
+#newsletterbutton{
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--subtitle-size);
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    padding: 20px 150px;
+    border-radius: 7px;
+    border: var(--primary-color) solid 3px;
+}
+
+#newsletterbutton:hover{
+    scale: 120%;
+}
+
+#build-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    font-size: var(--paragraph-size);
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+#looktext{
+    grid-column: 2/10;
+    grid-row: 2/9;
+    position: relative;
+    z-index: 996;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+footer, footer p {
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+}
+
+
+footer.tip {
+    background-color: var(--primary-color);
+}
+
+.tip p {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+form{
+    padding: 30px;
+    margin-top: 100px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font-size: var(--paragraph-size);
+    padding: 10px;
+    background-color: rgb(1000, 1000, 1000, 0.1);
+    
+}
+
+label {
+    font-size: var(--title-size);
+    color: var(--secondary-color);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    font-size: var(--subtitle-size);
+    background-color: var(--accent-color);
+}
+
 @media (min-width: 900px) {
     .page-bg-mobile {
         display: none;
+    }
+    
+    .two-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pcimage{
+        display: block;
+        width: 90%;
+        padding: 30px;
     }
 
     .page-bg-pc {
         display: block;
     }
+
+    .page-container{
+        aspect-ratio: 16/9;
+    }
+
+    #looktext{
+        display: block;
+        text-align: left;
+        position: relative;
+        grid-column: 1/7;
+        grid-row: 4/7;
+        z-index: 996;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+    }
+
+    #easing{
+        align-self: center;
+        justify-self: center;
+    }
+
 }
